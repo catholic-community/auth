@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import OnboardingLayout from '../../components/layout/OnboardingLayout'
-import PageUnderConstructionAlert from '../../components/PageUnderConstructionAlert'
+import OnboardingLayout from "../../components/layout/OnboardingLayout";
+import PageUnderConstructionAlert from "../../components/PageUnderConstructionAlert";
 
 export default function SignUp() {
-	return (
-		<OnboardingLayout>
-			<PageUnderConstructionAlert title="Cadastre-se" />
-		</OnboardingLayout>
-	)
+  return (
+    <OnboardingLayout>
+      <PageUnderConstructionAlert title="Cadastre-se" />
+    </OnboardingLayout>
+  );
 }

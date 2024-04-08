@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Cadastre-se agora",
+    "submitButton": "Cadastrar",
+    "text1": "Já tem uma conta na comunidade?",
+    "link1": "Entrar.",
+    "inputFields": [{ "label": "email" }, { "label": "senha" }],
+    "caption": "A senha deve conter ao menos uma letra, um número e pelo menos um caractere especial."
+  },
+  {
+    "title": "Confirme seu e-mail",
+    "submitButton": "Verificar",
+    "text1": "Enviamos um e-mail com um código de verificação para janedoe@gmail.com.",
+    "link1": "(não é você?)",
+    "text2": "Insira-o código abaixo para confirmar o seu e-mail.",
+    "inputFields": [{ "label": "Código" }],
+    "caption": "O código deve conter 6 dígitos."
+  },
+  {
+    "title": "Perfil",
+    "radioGroup": {
+      "title": "Tipo de Conta",
+      "options": ["Pessoal", "Comunidade"]
+    },
+    "inputFields": [
+      { "label": "Nome" },
+      { "label": "@username" },
+      { "label": "Sobre", "textArea": true }
+    ],
+    "submitButton": "Salvar"
+  },
+  {
+    "title": "Entrar na comunidade",
+    "submitButton": "Entrar",
+    "inputFields": [{ "label": "Email" }, { "label": "Senha" }],
+    "checkboxConfirmation": true
+  }
+]
