@@ -10,7 +10,7 @@ import FormFields from "@/schema/FormFields.json";
 const Form = () => {
   const formFields: IFormField[] = FormFields;
 
-  const selectedStep = 0;
+  const selectedStep = 3;
 
   return (
     <FormCard
@@ -26,22 +26,16 @@ const Form = () => {
         />
       )}
 
-      {formFields[selectedStep].text1 && (
-        <StyledTypography
-          text={formFields[selectedStep].text1}
-          linkText={
-            formFields[selectedStep].link1 ? formFields[selectedStep].link1 : ""
-          }
-        />
-      )}
-      {formFields[selectedStep].text2 && (
-        <StyledTypography
-          text={formFields[selectedStep].text2}
-          linkText={
-            formFields[selectedStep].link2 ? formFields[selectedStep].link2 : ""
-          }
-        />
-      )}
+      {formFields[selectedStep].texts &&
+        formFields[selectedStep].texts.length > 0 &&
+        formFields[selectedStep].texts.map((item) => (
+          <StyledTypography
+            text={item.value}
+            linkText={item.link ? item.link : ""}
+            key={item.value}
+          />
+        ))}
+
       {formFields[selectedStep].inputFields.map((item) => (
         <InputField
           label={item.label}

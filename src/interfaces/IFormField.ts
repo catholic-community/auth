@@ -2,13 +2,16 @@ interface IInputFields {
   label: string;
   textArea?: boolean;
 }
+
+interface ITexts {
+  value: string;
+  link?: string;
+}
+
 export interface IFormField {
   title: string;
   submitButton: string;
-  text1?: string;
-  link1?: string;
-  text2?: string;
-  link2?: string;
+  texts?: ITexts[];
   inputFields: IInputFields[];
   caption?: string;
   radioGroup?: {
